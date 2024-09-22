@@ -38,3 +38,54 @@ Ovaj projekat implementira jednostavan program za upravljanje medicinskim karton
   
 - **Prostorna složenost** je **O(n)**, gde je *n* maksimalan broj kartona (10 u ovom primeru). Prostorna složenost zavisi od broja elemenata pohranjenih u stack-u, a svaki element zauzima memorijski prostor za podatke o jednom pacijentu.
 
+# Hash Tabela - Student i Knjige
+
+## Opis
+
+Ovaj projekat implementira **hash tabelu** za čuvanje informacija o studentima i broju posuđenih knjiga. Koristi jednostavnu funkciju heširanja kako bi se obezbedilo brzo dodavanje i pretraga podataka.
+
+## Funkcionalnosti
+
+1. **Dodavanje studenta**: Novi unos studenta sa ID brojem i brojem posuđenih knjiga.
+2. **Ispis svih studenata**: Prikazuje sve studente i informacije o broju knjiga koje su posudili.
+3. **Izlaz**: Zatvaranje programa.
+
+## Struktura Projekta
+
+- **Node**: Struktura koja čuva ključ (ID studenta), vrednost (broj posuđenih knjiga), i pokazivač na sledeći čvor u slučaju sudara u hash tabeli.
+- **HashTable**: Struktura koja sadrži heš tabelu sa pokazivačima na listu čvorova (studente).
+
+## Instalacija i Pokretanje
+
+1. Klonirajte repozitorijum:
+    ```bash
+    git clone https://github.com/vas-korisnicki-repozitorijum/hash-tabela-zadatak.git
+    ```
+2. Kompajlirajte program:
+    ```bash
+    g++ -o hash_program hash_tabela_zadatak.cpp
+    ```
+3. Pokrenite program:
+    ```bash
+    ./hash_program
+    ```
+
+## Vremenska i Prostorna Složenost
+
+### Vremenska Složenost
+
+- **Dodavanje (addNode)**: 
+    - Prosečna vremenska složenost za dodavanje elementa je **O(1)**, zahvaljujući heširanju.
+    - U najgorem slučaju (kada postoji više sudara i svi elementi završe u istoj "kanti"), složenost je **O(n)**, gde je *n* broj elemenata u toj kanti.
+
+- **Ispisivanje (printHashTable)**:
+    - Prosečna vremenska složenost je **O(n)**, gde je *n* ukupan broj elemenata u tabeli, jer se svaki element mora proći jednom.
+
+- **Heširanje (hashFunction)**:
+    - Vremenska složenost same heš funkcije je **O(1)**, jer je jednostavna aritmetička operacija.
+
+### Prostorna Složenost
+
+- **Prostorna složenost**:
+    - Prostorna složenost hash tabele je **O(n)**, gde je *n* broj elemenata, jer svaki čvor zauzima prostor za čuvanje ključa, vrednosti i pokazivača na sledeći čvor.
+
