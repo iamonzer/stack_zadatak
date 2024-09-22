@@ -89,7 +89,7 @@ Ovaj projekat implementira **hash tabelu** za čuvanje informacija o studentima 
 - **Prostorna složenost**:
     - Prostorna složenost hash tabele je **O(n)**, gde je *n* broj elemenata, jer svaki čvor zauzima prostor za čuvanje ključa, vrednosti i pokazivača na sledeći čvor.
 
-### Quick Sort
+# Quick Sort
 
 ## Zaključak
 
