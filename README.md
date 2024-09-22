@@ -89,3 +89,21 @@ Ovaj projekat implementira **hash tabelu** za čuvanje informacija o studentima 
 - **Prostorna složenost**:
     - Prostorna složenost hash tabele je **O(n)**, gde je *n* broj elemenata, jer svaki čvor zauzima prostor za čuvanje ključa, vrednosti i pokazivača na sledeći čvor.
 
+### Quick Sort
+
+## Zaključak
+
+Ovaj projekat implementira **Quicksort** algoritam za sortiranje niza celih brojeva. Quicksort je efikasan, rekurzivan algoritam za sortiranje, sa sledećim karakteristikama:
+
+- **Vremenska složenost**:
+  - Najbolji slučaj: `O(n log n)`
+  - Prosečan slučaj: `O(n log n)`
+  - Najgori slučaj: `O(n²)` (dešava se kada je pivot najslabije izabran, npr. kada je niz već sortiran)
+  
+- **Prostorna složenost**:
+  - U najboljem i prosečnom slučaju: `O(log n)` (zahvaljujući rekurziji)
+  - U najgorem slučaju: `O(n)` (zbog linearne dubine rekurzije)
+
+Iako quicksort ima **O(n²)** vremensku složenost u najgorem slučaju, često je brži od drugih algoritama sortiranja kao što je **Merge sort**, zbog manjeg broja upotrebljenih resursa u prosečnom slučaju. 
+
+Algoritam koristi "in-place" pristup, što znači da ne zahteva dodatni prostor za skladištenje kopija podataka, što ga čini efikasnim u pogledu memorije.
