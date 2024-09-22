@@ -107,3 +107,18 @@ Ovaj projekat implementira **Quicksort** algoritam za sortiranje niza celih broj
 Iako quicksort ima **O(n²)** vremensku složenost u najgorem slučaju, često je brži od drugih algoritama sortiranja kao što je **Merge sort**, zbog manjeg broja upotrebljenih resursa u prosečnom slučaju. 
 
 Algoritam koristi "in-place" pristup, što znači da ne zahteva dodatni prostor za skladištenje kopija podataka, što ga čini efikasnim u pogledu memorije.
+
+
+# Zaključak
+
+Ovaj projekat implementira **Bubble Sort** algoritam za sortiranje niza celih brojeva. Bubble Sort je jednostavan algoritam za sortiranje koji funkcioniše poredeći susedne elemente i zamenjujući ih ako su u pogrešnom redosledu. Analiza performansi algoritma je sledeća:
+
+- **Vremenska složenost**:
+  - **Najbolji slučaj**: `O(n)` (kada je niz već sortiran)
+  - **Najgori slučaj**: `O(n²)` (kada je niz potpuno obrnut)
+  - **Prosečan slučaj**: `O(n²)`
+
+- **Prostorna složenost**: `O(1)`  
+  (Bubble Sort je in-place algoritam, što znači da ne zahteva dodatni prostor osim za privremene varijable)
+
+Iako Bubble Sort ima jednostavnu implementaciju, nije efikasan za velike nizove zbog kvadratne vremenske složenosti u prosečnom i najgorem slučaju. Zbog toga se koristi uglavnom za edukativne svrhe ili za male skupove podataka.
